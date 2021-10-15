@@ -1,0 +1,48 @@
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    margin-left: 30%;
+    margin-right: 20%;
+    align-items: center;
+}
+.Title{
+    width: 40em;
+    text-align: center;
+}
+.title{
+    background: none;
+    margin-top: 0.5em;
+    float: left;
+    border: none;
+    margin-left: 0.5em;
+    width: 8em;
+    font-size: 2em;
+    font-weight: bold;
+}
+.detail{
+    width: 50em;
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    height: 25em;
+}
+.addtaskbtn{
+    width: 10em;
+    margin-top: 0.5em;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1.3em;
+    height: 2em;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn{
+    margin-right: 7em;
+    margin-top: 2em;
+    text-align: center;
+}
+
