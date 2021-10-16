@@ -1,0 +1,51 @@
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+.main{
+    margin-top: 5em;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: fit-content;
+    border: 2px solid #4caf50;
+    height: 88px;
+    border-radius: 10px;
+}
+.title{
+    margin-top: 0.5em;
+    float: left;
+    margin-left: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+.detail{
+    margin-top: 0.8em;
+    font-size: 0.7em;
+    font-weight: normal;
+}
+.button{
+    margin-left: 55em;
+    width: 5em;
+    padding-right: 2em;
+}
+.btn1{
+    width: 5em;
+    margin-top: 0.5em;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1em;
+    height: 2em;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn2{
+    width: 5em;
+    margin-top: 0.5em;
+    background-color: red;
+    color: white;
+    font-size: 1em;
+    height: 2em;
+    border-radius: 5px;
+}

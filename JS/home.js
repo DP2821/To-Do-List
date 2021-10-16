@@ -33,7 +33,19 @@ for(var x in dict){
     
 
 function searchTask(){
-
+    var dict = JSON.parse(sessionStorage.getItem("dict"));
+    var searchtodolist = document.getElementById("search").value;
+    var flag = 0;
+    for(var i  in dict){
+        if(i == searchtodolist){
+            flag = 1;
+            sessionStorage.setItem("searchtodolist", searchtodolist );
+            window.location = "search.html";
+        }
+    }
+    if(flag == 0){
+        alert("Sorry search result is not available");
+    }
 }
     
 function addList(){
