@@ -9,23 +9,6 @@ if(dict == null){
 }
 
 
-document.write("<link rel=\"stylesheet\" href=\"Addtask.css\">");
-
-document.write("<div class=\"main\">" +
-"<div class=\"Title\">" +
-    "<input class=\"title\" id=\"Title\" type=\"text\" placeholder=\"Title\">" +
-
-    "<textarea class=\"detail\" id=\"Detail\" type=\"text\" placeholder=\"Start Write...\"></textarea>" +
-    "</textarea>" +
-"</div>" +
-
-"<div class=\"btn\">" +
-    "<button class=\"addtaskbtn\" onclick=\"addTask()\">Add Task</button>" +
-"</div>" +
-"</div>")
-
-
-
 if(title != null){
     document.getElementById("Title").value = title;
     if(title != "")
