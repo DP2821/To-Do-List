@@ -1,9 +1,16 @@
+// Getting dictionary from storage
 var dict = JSON.parse(sessionStorage.getItem("dict"));
 
+
+// Getting searched list's title from storage
 var searchtodolist = sessionStorage.getItem("searchtodolist");
 
+
+// CSS
 document.write("<link rel=\"stylesheet\" href=\"search.css\">");
 
+
+// Showing searched list
 document.write("<div class=\"" + searchtodolist + "\">" +
     "<div class=\"main\">" +
     "<div class=\"title\">" +
@@ -21,22 +28,23 @@ document.write("<div class=\"" + searchtodolist + "\">" +
     "</div>");
 
 
-    function editTask(title,discription){
+
+// For edit-task
+function editTask(title,discription){
+
+    sessionStorage.setItem("title", title);
+
+    window.location.href = "Addtask.html";
+}
     
-        sessionStorage.setItem("title", title);
+
+// For delete task
+function deleteTask(title){
+
+    delete dict[title];
+    sessionStorage.setItem("dict", JSON.stringify(dict));
+    const pizza = document.querySelector("." + title);
+    pizza.style.visibility = 'hidden';
     
-        window.location.href = "Addtask.html";
-        
-    }
-    
-    function deleteTask(title){
-    
-        
-        delete dict[title];
-        sessionStorage.setItem("dict", JSON.stringify(dict));
-        const pizza = document.querySelector("." + title);
-        pizza.style.visibility = 'hidden';
-        
-        window.location.href = "home.html";
-        
-    }
+    window.location.href = "home.html";   
+}
