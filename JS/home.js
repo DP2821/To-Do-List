@@ -25,10 +25,19 @@ for(var x in dict){
     "<div class=\"title\">" +
         x +
         "<div class=\"detail\">" +
-            dict[x] +
+            dict[x]["discription"] +
         "</div>" +
-    "</div>" +
 
+        
+
+        "<div>"+
+            dict[x]["date"] + 
+        "</div>"+
+
+
+
+    "</div>" +
+    
     "<div class=\"button\">" +
         "<button class=\"btn1\" onclick=\"editTask('" + x + "')\">Edit</button>" +
         "<button class=\"btn2\" onclick=\"deleteTask('" + x + "')\">Delete</button>" +
@@ -63,7 +72,7 @@ function addList(){
 
 
 // Edit particular task
-function editTask(title,discription){
+function editTask(title){
     
     sessionStorage.setItem("title", title);
 
