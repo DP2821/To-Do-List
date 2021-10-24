@@ -30,6 +30,7 @@ if(title != null){
     if(title != ""){
         document.getElementById("Detail").value = dict[title]["discription"];
         document.getElementById("taskDate").value = dict[title]["date"];
+        document.getElementById("taskTime").value = dict[title]["time"];
     }
     delete dict[title];
 }
