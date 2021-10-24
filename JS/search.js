@@ -25,6 +25,10 @@ document.write("<div class=\"" + searchtodolist + "\">" +
             dict[searchtodolist]["date"] + 
         "</div>"+
 
+        "<div>"+
+            dict[searchtodolist]["time"]+
+        "</div>"+
+
 
 
     "</div>" +
