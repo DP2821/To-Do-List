@@ -34,6 +34,10 @@ for(var x in dict){
             dict[x]["date"] + 
         "</div>"+
 
+        "<div>"+
+            dict[x]["time"]+
+        "</div>"+
+
 
 
     "</div>" +
