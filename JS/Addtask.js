@@ -21,6 +21,8 @@ today = new Date();
 var todayDate = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 document.getElementById("taskDate").value = todayDate;
 
+var todayTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+document.getElementById("taskTime").value = todayTime;
 
 // If title is exist[For edit-task]
 if(title != null){
@@ -39,11 +41,12 @@ function addTask(){
     key = document.getElementById("Title").value;
     discription = document.getElementById("Detail").value;
     taskDate = document.getElementById("taskDate").value;
-
+    taskTime = document.getElementById("taskTime").value;
 
     dict[key] = {
         "discription" : discription,
-        "date" : taskDate
+        "date" : taskDate,
+        "time" : taskTime
     };
     
     sessionStorage.setItem("dict", JSON.stringify(dict));
