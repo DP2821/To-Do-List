@@ -24,6 +24,7 @@ document.getElementById("taskDate").value = todayDate;
 var todayTime = today.getHours()+ ":" + today.getMinutes()+ ":" + today.getSeconds();
 document.getElementById("taskTime").value = todayTime;
 
+
 // If title is exist[For edit-task]
 if(title != null){
     document.getElementById("Title").value = title;

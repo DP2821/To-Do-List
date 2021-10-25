@@ -89,8 +89,8 @@ function deleteTask(title){
    
     delete dict[title];
     sessionStorage.setItem("dict", JSON.stringify(dict));
-    const pizza = document.querySelector("." + title);
-    pizza.style.visibility = 'hidden';
+    const titleDoc = document.querySelector("." + title);
+    titleDoc.style.visibility = 'hidden';
 
     location.reload(true);    
 }

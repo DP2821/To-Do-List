@@ -74,7 +74,7 @@ body{
     font-weight: normal;
 }
 .button{
-    margin-left: 60em;
+    margin-left: 53em;
     width: 5em;
     
 }
@@ -99,11 +99,11 @@ body{
 }
 .date{
     width: fit-content;
-    margin-left: 29em;
+    margin-left: 24em;
     margin-top: -2.5em;
 }
 .time{
     width: fit-content;
-    margin-left: 35em;
-    margin-top: -1.1em;
+    margin-left: 30em;
+    margin-top: -1.17em;
 }
