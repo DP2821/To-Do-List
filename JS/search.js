@@ -19,19 +19,19 @@ document.write("<div class=\"" + searchtodolist + "\">" +
             dict[searchtodolist]["discription"] +
         "</div>" +
 
-
-
-        "<div>"+
+    "</div>" +
+    
+    "<div class=\"datetime\">" +
+        "<div class=\"date\">"+
             dict[searchtodolist]["date"] + 
         "</div>"+
 
-        "<div>"+
-            dict[searchtodolist]["time"]+
+        "<div class=\"time\">"+
+        dict[searchtodolist]["time"]+
         "</div>"+
 
+    "</div>"+
 
-
-    "</div>" +
 
     "<div class=\"button\">" +
         "<button class=\"btn1\" onclick=\"editTask('" + searchtodolist + "')\">Edit</button>" +
@@ -56,8 +56,8 @@ function deleteTask(title){
 
     delete dict[title];
     sessionStorage.setItem("dict", JSON.stringify(dict));
-    const pizza = document.querySelector("." + title);
-    pizza.style.visibility = 'hidden';
+    const titleDoc = document.querySelector("." + title);
+    titleDoc.style.visibility = 'hidden';
     
     window.location.href = "home.html";   
 }

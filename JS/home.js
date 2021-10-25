@@ -2,10 +2,6 @@
 var dict = JSON.parse(sessionStorage.getItem("dict"));
 
 
-// CSS for searchbar
-document.write("<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">");
-
-
 // Searchbar
 document.write("<div class=\"search\">" +
     "<input class=\"searchtext\" type=\"text\" placeholder=\"Search..\" id=\"search\">" +
@@ -27,9 +23,8 @@ for(var x in dict){
         "<div class=\"detail\">" +
             dict[x]["discription"] +
         "</div>" +
-
-        
-
+    "</div>" +
+    "<div class=\"datetime\">" +
         "<div class=\"date\">"+
             dict[x]["date"] + 
         "</div>"+
@@ -37,10 +32,7 @@ for(var x in dict){
         "<div class=\"time\">"+
             dict[x]["time"]+
         "</div>"+
-
-
-
-    "</div>" +
+    "</div>"+
     
     "<div class=\"button\">" +
         "<button class=\"btn1\" onclick=\"editTask('" + x + "')\">Edit</button>" +
@@ -89,8 +81,8 @@ function deleteTask(title){
    
     delete dict[title];
     sessionStorage.setItem("dict", JSON.stringify(dict));
-    const pizza = document.querySelector("." + title);
-    pizza.style.visibility = 'hidden';
+    const titlrDoc = document.querySelector("." + title);
+    titlrDoc.style.visibility = 'hidden';
 
     location.reload(true);    
 }

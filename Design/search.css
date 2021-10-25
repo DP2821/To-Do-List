@@ -7,7 +7,6 @@ body{
     margin-top: 5em;
     margin-left: 15%;
     margin-right: 15%;
-    width: fit-content;
     border: 2px solid #4caf50;
     height: 88px;
     border-radius: 10px;
@@ -26,9 +25,9 @@ body{
     font-weight: normal;
 }
 .button{
-    margin-left: 55em;
+    margin-right: 1em;
+    float: right;
     width: 5em;
-    padding-right: 2em;
 }
 .btn1{
     width: 5em;
@@ -48,4 +47,18 @@ body{
     font-size: 1em;
     height: 2em;
     border-radius: 5px;
+}
+.datetime{
+    float: right;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-right: 0.5em;
+}
+.date{
+    width: fit-content;
+    margin-top: 0.5em;
+}
+.time{
+    width: fit-content;
+    margin-top: 0.5em;
 }
