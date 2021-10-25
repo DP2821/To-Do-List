@@ -45,4 +45,22 @@ body{
     margin-top: 2em;
     text-align: center;
 }
+#taskDate{
+    width: fit-content;
+    height: 2em;
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+}
+#taskTime{
+    width: fit-content;
+    height: 2em;
+    font-size: large;
+    font-weight: bold;
+    margin-right: -8em;
+    margin-top: 2em;
+    border: 2px solid #4caf50;
+    border-radius: 5px;
+}
 

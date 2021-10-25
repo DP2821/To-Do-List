@@ -74,7 +74,7 @@ body{
     font-weight: normal;
 }
 .button{
-    margin-left: 52em;
+    margin-left: 60em;
     width: 5em;
     
 }
@@ -96,4 +96,14 @@ body{
     font-size: 1em;
     height: 2em;
     border-radius: 5px;
+}
+.date{
+    width: fit-content;
+    margin-left: 29em;
+    margin-top: -2.5em;
+}
+.time{
+    width: fit-content;
+    margin-left: 35em;
+    margin-top: -1.1em;
 }

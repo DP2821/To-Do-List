@@ -21,7 +21,7 @@ today = new Date();
 var todayDate = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 document.getElementById("taskDate").value = todayDate;
 
-var todayTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+var todayTime = today.getHours()+ ":" + today.getMinutes()+ ":" + today.getSeconds();
 document.getElementById("taskTime").value = todayTime;
 
 // If title is exist[For edit-task]

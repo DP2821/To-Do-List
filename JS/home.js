@@ -30,11 +30,11 @@ for(var x in dict){
 
         
 
-        "<div>"+
+        "<div class=\"date\">"+
             dict[x]["date"] + 
         "</div>"+
 
-        "<div>"+
+        "<div class=\"time\">"+
             dict[x]["time"]+
         "</div>"+
 
