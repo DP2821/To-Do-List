@@ -16,21 +16,39 @@ if(dict == null){
 }
 
 
+//printing today's date
+today = new Date();
+var todayDate = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+document.getElementById("taskDate").value = todayDate;
+
+var todayTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+document.getElementById("taskTime").value = todayTime;
+
 // If title is exist[For edit-task]
 if(title != null){
     document.getElementById("Title").value = title;
-    if(title != "")
-        document.getElementById("Detail").value = dict[title];
+    if(title != ""){
+        document.getElementById("Detail").value = dict[title]["discription"];
+        document.getElementById("taskDate").value = dict[title]["date"];
+        document.getElementById("taskTime").value = dict[title]["time"];
+    }
     delete dict[title];
 }
 
 
 // For adding task to the dictionary
 function addTask(){
-    key = document.getElementById("Title").value;
-    value = document.getElementById("Detail").value;
 
-    dict[key] = value;
+    key = document.getElementById("Title").value;
+    discription = document.getElementById("Detail").value;
+    taskDate = document.getElementById("taskDate").value;
+    taskTime = document.getElementById("taskTime").value;
+
+    dict[key] = {
+        "discription" : discription,
+        "date" : taskDate,
+        "time" : taskTime
+    };
     
     sessionStorage.setItem("dict", JSON.stringify(dict));
 
